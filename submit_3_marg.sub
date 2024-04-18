@@ -1,0 +1,17 @@
+executable   = /home/lroy02/PE/margtime_tacc_0/PE.sh
+arguments    = "/home/lroy02/PE/margtime_tacc_0/marg_inj.ini /home/lroy02/PE/margtime_tacc_0/output.hdf"
+
+error        = error_3.txt
+log          = log_3.txt
+output = out_3.txt
+getenv = True
+
+universe = vanilla
+request_cpus = 1
+request_disk =  5000
+request_memory = 5000
+
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+
+queue

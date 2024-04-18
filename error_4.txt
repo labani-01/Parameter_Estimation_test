@@ -1,0 +1,168 @@
+2024-04-18T15:02:07.311-04:00 Using seed 0
+2024-04-18T15:02:07.312-04:00 Running with CPU support: 1 threads
+2024-04-18T15:02:07.312-04:00 Reading configuration file
+2024-04-18T15:02:07.323-04:00 Setting up model
+2024-04-18T15:02:07.329-04:00 Setting up priors for each parameter
+2024-04-18T15:02:07.330-04:00 No sampling_params section read from config file
+2024-04-18T15:02:07.334-04:00 Determining analysis times to use
+2024-04-18T15:02:07.334-04:00 Padding H1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-04-18T15:02:07.334-04:00 Padding L1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-04-18T15:02:07.356-04:00 Generating Fake Strain
+2024-04-18T15:02:07.356-04:00 Making PSD for strain
+2024-04-18T15:02:07.520-04:00 Making colored noise
+2024-04-18T15:02:09.723-04:00 Highpass Filtering
+2024-04-18T15:02:09.749-04:00 Resampling data
+2024-04-18T15:02:09.750-04:00 Applying injections
+2024-04-18T15:02:10.462-04:00 Injecting at 1126259462.42, method is lal
+2024-04-18T15:02:10.470-04:00 Converting to float64
+2024-04-18T15:02:10.470-04:00 Highpass Filtering
+2024-04-18T15:02:10.481-04:00 Remove Padding
+2024-04-18T15:02:10.487-04:00 Generating Fake Strain
+2024-04-18T15:02:10.487-04:00 Making PSD for strain
+2024-04-18T15:02:10.602-04:00 Making colored noise
+2024-04-18T15:02:11.289-04:00 Highpass Filtering
+2024-04-18T15:02:11.297-04:00 Resampling data
+2024-04-18T15:02:11.297-04:00 Applying injections
+2024-04-18T15:02:11.841-04:00 Injecting at 1126259462.42, method is lal
+2024-04-18T15:02:11.842-04:00 Converting to float64
+2024-04-18T15:02:11.842-04:00 Highpass Filtering
+2024-04-18T15:02:11.850-04:00 Remove Padding
+2024-04-18T15:02:11.850-04:00 Will generate a different time series for PSD estimation
+2024-04-18T15:02:11.854-04:00 Generating Fake Strain
+2024-04-18T15:02:11.854-04:00 Making PSD for strain
+2024-04-18T15:02:11.969-04:00 Making colored noise
+2024-04-18T15:02:12.923-04:00 Highpass Filtering
+2024-04-18T15:02:13.068-04:00 Resampling data
+2024-04-18T15:02:13.070-04:00 Applying injections
+2024-04-18T15:02:13.617-04:00 Injecting at 1126259462.42, method is lal
+2024-04-18T15:02:13.618-04:00 Converting to float64
+2024-04-18T15:02:13.619-04:00 Highpass Filtering
+2024-04-18T15:02:13.763-04:00 Remove Padding
+2024-04-18T15:02:13.767-04:00 Generating Fake Strain
+2024-04-18T15:02:13.767-04:00 Making PSD for strain
+2024-04-18T15:02:13.883-04:00 Making colored noise
+2024-04-18T15:02:14.861-04:00 Highpass Filtering
+2024-04-18T15:02:15.006-04:00 Resampling data
+2024-04-18T15:02:15.007-04:00 Applying injections
+2024-04-18T15:02:15.550-04:00 Injecting at 1126259462.42, method is lal
+2024-04-18T15:02:15.552-04:00 Converting to float64
+2024-04-18T15:02:15.554-04:00 Highpass Filtering
+2024-04-18T15:02:15.698-04:00 Remove Padding
+2024-04-18T15:02:15.698-04:00 Applying gates to PSD data
+2024-04-18T15:02:15.949-04:00 Marginalizing over tc, 500 points from prior
+2024-04-18T15:02:15.949-04:00 Marginalizing over ra, 500 points from prior
+2024-04-18T15:02:15.949-04:00 Marginalizing over dec, 500 points from prior
+2024-04-18T15:02:15.950-04:00 Marginalizing over polarization, 500 points from prior
+2024-04-18T15:02:15.950-04:00 Marginalizing over distance
+2024-04-18T15:02:15.950-04:00 Prior is directly on distance, setting up 1000 grid weights
+2024-04-18T15:02:15.970-04:00 Interpolator valid for SNRs in (5.0, 50.0)
+2024-04-18T15:02:15.971-04:00 Interpolator using grid (100, 100)
+2024-04-18T15:02:15.971-04:00 Setup up likelihood interpolator
+  0%|          | 0/100 [00:00<?, ?it/s]  3%|▎         | 3/100 [00:00<00:03, 29.33it/s]  7%|▋         | 7/100 [00:00<00:02, 32.70it/s] 11%|█         | 11/100 [00:00<00:02, 33.24it/s] 15%|█▌        | 15/100 [00:00<00:02, 32.05it/s] 19%|█▉        | 19/100 [00:00<00:02, 33.24it/s] 23%|██▎       | 23/100 [00:00<00:02, 33.86it/s] 27%|██▋       | 27/100 [00:00<00:02, 33.94it/s] 31%|███       | 31/100 [00:00<00:02, 34.32it/s] 35%|███▌      | 35/100 [00:01<00:01, 34.08it/s] 39%|███▉      | 39/100 [00:01<00:01, 34.54it/s] 43%|████▎     | 43/100 [00:01<00:01, 34.87it/s] 47%|████▋     | 47/100 [00:01<00:01, 34.98it/s] 51%|█████     | 51/100 [00:01<00:01, 34.96it/s] 55%|█████▌    | 55/100 [00:01<00:01, 35.08it/s] 59%|█████▉    | 59/100 [00:01<00:01, 35.11it/s] 63%|██████▎   | 63/100 [00:01<00:01, 35.01it/s] 67%|██████▋   | 67/100 [00:01<00:00, 35.00it/s] 71%|███████   | 71/100 [00:02<00:00, 34.89it/s] 75%|███████▌  | 75/100 [00:02<00:00, 34.92it/s] 79%|███████▉  | 79/100 [00:02<00:00, 34.65it/s] 83%|████████▎ | 83/100 [00:02<00:00, 34.50it/s] 87%|████████▋ | 87/100 [00:02<00:00, 34.65it/s] 91%|█████████ | 91/100 [00:02<00:00, 34.53it/s] 95%|█████████▌| 95/100 [00:02<00:00, 34.65it/s] 99%|█████████▉| 99/100 [00:02<00:00, 34.44it/s]100%|██████████| 100/100 [00:02<00:00, 34.37it/s]
+2024-04-18T15:02:18.899-04:00 Setting up sampler
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 502, in _trytoget
+    return getattr(self._current_stats, statname)
+AttributeError: 'ModelStats' object has no attribute 'loglikelihood'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 502, in _trytoget
+    return getattr(self._current_stats, statname)
+AttributeError: 'ModelStats' object has no attribute 'loglr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynesty.py", line 910, in __call__
+    return self.func(np.asarray(x).copy(), *self.args, **self.kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/base_cube.py", line 34, in call_global_loglikelihood
+    return models._global_instance.log_likelihood(cube)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/base_cube.py", line 80, in log_likelihood
+    return getattr(self.model, self.loglikelihood_function)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 521, in loglikelihood
+    return self._trytoget('loglikelihood', self._loglikelihood,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 509, in _trytoget
+    val = fallback(**kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/gaussian_noise.py", line 419, in _loglikelihood
+    return self.loglr + self.lognl
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base_data.py", line 116, in loglr
+    return self._trytoget('loglr', self._loglr, apply_transforms=True)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 509, in _trytoget
+    val = fallback(**kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/marginalized_gaussian_noise.py", line 270, in _loglr
+    wfs = self.waveform_generator.generate(**params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 922, in generate
+    hp, hc = self.rframe_generator.generate(**self.current_params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 116, in generate
+    return self._generate_from_current()
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 137, in dostuff
+    res = generate_func(self) # pylint:disable=not-callable
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 146, in _generate_from_current
+    new_waveform = self.generator(**self.current_params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/waveform.py", line 598, in get_td_waveform
+    return wav_gen(**input_params)
+TypeError: const_los_Acc_td() missing 2 required positional arguments: 'v0' and 'acc'
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 502, in _trytoget
+    return getattr(self._current_stats, statname)
+AttributeError: 'ModelStats' object has no attribute 'loglikelihood'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 502, in _trytoget
+    return getattr(self._current_stats, statname)
+AttributeError: 'ModelStats' object has no attribute 'loglr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/bin/pycbc_inference", line 137, in <module>
+    sampler = inference.sampler.load_from_config(
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/__init__.py", line 95, in load_from_config
+    return samplers[name].from_config(cp, model, **kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/dynesty.py", line 341, in from_config
+    obj = cls(model, nlive=nlive, nprocesses=nprocesses,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/dynesty.py", line 151, in __init__
+    self._sampler = dynesty.NestedSampler(log_likelihood_call,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynesty.py", line 677, in __new__
+    live_points, logvol_init, init_ncalls = _initialize_live_points(
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynamicsampler.py", line 438, in _initialize_live_points
+    cur_live_logl = loglikelihood.map(np.asarray(cur_live_v))
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/utils.py", line 177, in map
+    for _ in self.pool.map(self.loglikelihood, pars)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/pool.py", line 122, in map
+    return [f(a) for a in items]
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/pool.py", line 122, in <listcomp>
+    return [f(a) for a in items]
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynesty.py", line 910, in __call__
+    return self.func(np.asarray(x).copy(), *self.args, **self.kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/base_cube.py", line 34, in call_global_loglikelihood
+    return models._global_instance.log_likelihood(cube)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/base_cube.py", line 80, in log_likelihood
+    return getattr(self.model, self.loglikelihood_function)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 521, in loglikelihood
+    return self._trytoget('loglikelihood', self._loglikelihood,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 509, in _trytoget
+    val = fallback(**kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/gaussian_noise.py", line 419, in _loglikelihood
+    return self.loglr + self.lognl
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base_data.py", line 116, in loglr
+    return self._trytoget('loglr', self._loglr, apply_transforms=True)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/base.py", line 509, in _trytoget
+    val = fallback(**kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/marginalized_gaussian_noise.py", line 270, in _loglr
+    wfs = self.waveform_generator.generate(**params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 922, in generate
+    hp, hc = self.rframe_generator.generate(**self.current_params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 116, in generate
+    return self._generate_from_current()
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 137, in dostuff
+    res = generate_func(self) # pylint:disable=not-callable
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/generator.py", line 146, in _generate_from_current
+    new_waveform = self.generator(**self.current_params)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/waveform/waveform.py", line 598, in get_td_waveform
+    return wav_gen(**input_params)
+TypeError: const_los_Acc_td() missing 2 required positional arguments: 'v0' and 'acc'

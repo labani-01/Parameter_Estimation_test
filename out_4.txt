@@ -1,0 +1,6 @@
+Intel MKL WARNING: Support of Intel(R) Advanced Vector Extensions (Intel(R) AVX) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library will use Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) instructions instead.
+Exception while calling loglikelihood function:
+  params: [46.68875506 74.98253491  1.91521391]
+  args: []
+  kwargs: {}
+  exception:
