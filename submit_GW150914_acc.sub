@@ -1,0 +1,17 @@
+executable   = /home/lroy02/acceleration_project/GW150914_acc/run.sh
+arguments    = "/home/lroy02/acceleration_project/GW150914_acc/config.ini /home/lroy02/acceleration_project/GW150914_acc/inference.hdf"
+
+error        = error_GW150914_acc.txt
+log          = log_GW150914_acc.txt
+output = out_GW150914_acc.txt
+getenv = True
+
+universe = vanilla
+request_cpus = 16
+request_disk =  5000
+request_memory = 5000
+
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+
+queue

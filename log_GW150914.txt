@@ -1,0 +1,312 @@
+000 (1454532.000.000) 2024-04-30 15:00:14 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454532.000.000) 2024-04-30 15:00:37 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5557>
+...
+040 (1454532.000.000) 2024-04-30 15:00:37 Finished transferring input files
+...
+001 (1454532.000.000) 2024-04-30 15:00:38 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+007 (1454532.000.000) 2024-04-30 15:00:38 Shadow exception!
+	Error from slot1_2@CRUSH-OG-10-5-225-153: Failed to execute '/var/lib/condor/execute/dir_3109289/condor_exec.exe' with arguments /home/lroy02/acceleration_project/config.ini /home/lroy02/acceleration_project/inference.hdf: (errno=8: 'Exec format error')
+	0  -  Run Bytes Sent By Job
+	237  -  Run Bytes Received By Job
+...
+012 (1454532.000.000) 2024-04-30 15:00:38 Job was held.
+	Error from slot1_2@CRUSH-OG-10-5-225-153: Failed to execute '/var/lib/condor/execute/dir_3109289/condor_exec.exe' with arguments /home/lroy02/acceleration_project/config.ini /home/lroy02/acceleration_project/inference.hdf: (errno=8: 'Exec format error')
+	Code 6 Subcode 8
+...
+000 (1454533.000.000) 2024-04-30 15:06:04 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454533.000.000) 2024-04-30 15:06:24 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5558>
+...
+040 (1454533.000.000) 2024-04-30 15:06:24 Finished transferring input files
+...
+001 (1454533.000.000) 2024-04-30 15:06:25 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+009 (1454532.000.000) 2024-04-30 15:06:29 Job was aborted.
+	via condor_rm (by user lroy02)
+...
+006 (1454533.000.000) 2024-04-30 15:06:34 Image size of job updated: 40072
+	19  -  MemoryUsage of job (MB)
+	19216  -  ResidentSetSize of job (KB)
+...
+006 (1454533.000.000) 2024-04-30 15:07:12 Image size of job updated: 1354896
+	19  -  MemoryUsage of job (MB)
+	19216  -  ResidentSetSize of job (KB)
+...
+040 (1454533.000.000) 2024-04-30 15:07:12 Started transferring output files
+...
+040 (1454533.000.000) 2024-04-30 15:07:12 Finished transferring output files
+...
+005 (1454533.000.000) 2024-04-30 15:07:12 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:04, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:04, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1291  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	1291  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                16        16 
+	   Disk (KB)            :       12     5000     30758 
+	   Memory (MB)          :       19     5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T19:07:12Z with exit-code 1.
+...
+000 (1454534.000.000) 2024-04-30 15:13:12 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454534.000.000) 2024-04-30 15:13:56 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5559>
+...
+040 (1454534.000.000) 2024-04-30 15:13:56 Finished transferring input files
+...
+001 (1454534.000.000) 2024-04-30 15:13:57 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+006 (1454534.000.000) 2024-04-30 15:14:06 Image size of job updated: 121348
+	112  -  MemoryUsage of job (MB)
+	113956  -  ResidentSetSize of job (KB)
+...
+006 (1454534.000.000) 2024-04-30 15:14:12 Image size of job updated: 1359640
+	112  -  MemoryUsage of job (MB)
+	113956  -  ResidentSetSize of job (KB)
+...
+040 (1454534.000.000) 2024-04-30 15:14:13 Started transferring output files
+...
+040 (1454534.000.000) 2024-04-30 15:14:13 Finished transferring output files
+...
+005 (1454534.000.000) 2024-04-30 15:14:13 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:04, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:04, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3920  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	3920  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                16        16 
+	   Disk (KB)            :       15     5000     30758 
+	   Memory (MB)          :      112     5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T19:14:12Z with exit-code 1.
+...
+000 (1454535.000.000) 2024-04-30 15:19:24 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454535.000.000) 2024-04-30 15:20:03 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5560>
+...
+040 (1454535.000.000) 2024-04-30 15:20:03 Finished transferring input files
+...
+001 (1454535.000.000) 2024-04-30 15:20:04 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+006 (1454535.000.000) 2024-04-30 15:20:13 Image size of job updated: 1316032
+	111  -  MemoryUsage of job (MB)
+	113240  -  ResidentSetSize of job (KB)
+...
+006 (1454535.000.000) 2024-04-30 15:22:35 Image size of job updated: 1895412
+	111  -  MemoryUsage of job (MB)
+	113240  -  ResidentSetSize of job (KB)
+...
+040 (1454535.000.000) 2024-04-30 15:22:35 Started transferring output files
+...
+040 (1454535.000.000) 2024-04-30 15:22:35 Finished transferring output files
+...
+005 (1454535.000.000) 2024-04-30 15:22:35 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:01:24, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:24, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3876  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	3876  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.44       16        16 
+	   Disk (KB)            :    20        5000     30758 
+	   Memory (MB)          :   111        5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T19:22:35Z with exit-code 1.
+...
+000 (1454536.000.000) 2024-04-30 15:27:17 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454536.000.000) 2024-04-30 15:27:57 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5561>
+...
+040 (1454536.000.000) 2024-04-30 15:27:57 Finished transferring input files
+...
+001 (1454536.000.000) 2024-04-30 15:27:58 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+006 (1454536.000.000) 2024-04-30 15:28:06 Image size of job updated: 94508
+	90  -  MemoryUsage of job (MB)
+	91736  -  ResidentSetSize of job (KB)
+...
+006 (1454536.000.000) 2024-04-30 15:28:08 Image size of job updated: 106916
+	90  -  MemoryUsage of job (MB)
+	91868  -  ResidentSetSize of job (KB)
+...
+040 (1454536.000.000) 2024-04-30 15:28:08 Started transferring output files
+...
+040 (1454536.000.000) 2024-04-30 15:28:08 Finished transferring output files
+...
+005 (1454536.000.000) 2024-04-30 15:28:08 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:03, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1280  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	1280  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                16        16 
+	   Disk (KB)            :       12     5000     30758 
+	   Memory (MB)          :       90     5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T19:28:08Z with exit-code 1.
+...
+000 (1454537.000.000) 2024-04-30 15:29:21 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454537.000.000) 2024-04-30 15:30:01 Started transferring input files
+	Transferring to host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=slot1_2_1295_31ce_5562>
+...
+040 (1454537.000.000) 2024-04-30 15:30:01 Finished transferring input files
+...
+001 (1454537.000.000) 2024-04-30 15:30:02 Job executing on host: <10.5.225.153:9618?addrs=10.5.225.153-9618&alias=CRUSH-OG-10-5-225-153&noUDP&sock=startd_1260_d56b>
+...
+006 (1454537.000.000) 2024-04-30 15:30:11 Image size of job updated: 1360696
+	112  -  MemoryUsage of job (MB)
+	114220  -  ResidentSetSize of job (KB)
+...
+006 (1454537.000.000) 2024-04-30 15:31:42 Image size of job updated: 1895416
+	112  -  MemoryUsage of job (MB)
+	114220  -  ResidentSetSize of job (KB)
+...
+040 (1454537.000.000) 2024-04-30 15:31:42 Started transferring output files
+...
+040 (1454537.000.000) 2024-04-30 15:31:42 Finished transferring output files
+...
+005 (1454537.000.000) 2024-04-30 15:31:42 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:01:23, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:23, Sys 0 00:00:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4115  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	4115  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00       16        16 
+	   Disk (KB)            :    21        5000     30758 
+	   Memory (MB)          :   112        5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T19:31:42Z with exit-code 1.
+...
+000 (1454540.000.000) 2024-04-30 16:33:49 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454540.000.000) 2024-04-30 16:35:52 Started transferring input files
+	Transferring to host: <10.5.144.223:9618?addrs=10.5.144.223-9618&alias=CRUSH-OG-10-5-144-223&noUDP&sock=slot1_1_1305_3d8e_5544>
+...
+040 (1454540.000.000) 2024-04-30 16:35:52 Finished transferring input files
+...
+001 (1454540.000.000) 2024-04-30 16:35:53 Job executing on host: <10.5.144.223:9618?addrs=10.5.144.223-9618&alias=CRUSH-OG-10-5-144-223&noUDP&sock=startd_1270_b15e>
+...
+006 (1454540.000.000) 2024-04-30 16:36:02 Image size of job updated: 1188616
+	29  -  MemoryUsage of job (MB)
+	28864  -  ResidentSetSize of job (KB)
+...
+006 (1454540.000.000) 2024-04-30 16:38:12 Image size of job updated: 1895396
+	29  -  MemoryUsage of job (MB)
+	28864  -  ResidentSetSize of job (KB)
+...
+040 (1454540.000.000) 2024-04-30 16:38:12 Started transferring output files
+...
+040 (1454540.000.000) 2024-04-30 16:38:12 Finished transferring output files
+...
+005 (1454540.000.000) 2024-04-30 16:38:12 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:01:22, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:22, Sys 0 00:00:08  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4115  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	4115  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99       16        16 
+	   Disk (KB)            :    21        5000     29587 
+	   Memory (MB)          :    29        5000      5120 
+
+	Job terminated of its own accord at 2024-04-30T20:38:12Z with exit-code 1.
+...
+000 (1454564.000.000) 2024-05-01 20:23:12 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454564.000.000) 2024-05-01 20:23:32 Started transferring input files
+	Transferring to host: <10.5.215.178:9618?addrs=10.5.215.178-9618&alias=CRUSH-OG-10-5-215-178&noUDP&sock=slot1_1_1298_4eee_5596>
+...
+040 (1454564.000.000) 2024-05-01 20:23:32 Finished transferring input files
+...
+001 (1454564.000.000) 2024-05-01 20:23:33 Job executing on host: <10.5.215.178:9618?addrs=10.5.215.178-9618&alias=CRUSH-OG-10-5-215-178&noUDP&sock=startd_1257_c6a2>
+...
+006 (1454564.000.000) 2024-05-01 20:23:42 Image size of job updated: 34800
+	18  -  MemoryUsage of job (MB)
+	17772  -  ResidentSetSize of job (KB)
+...
+006 (1454564.000.000) 2024-05-01 20:26:39 Image size of job updated: 1895404
+	18  -  MemoryUsage of job (MB)
+	17772  -  ResidentSetSize of job (KB)
+...
+040 (1454564.000.000) 2024-05-01 20:26:39 Started transferring output files
+...
+040 (1454564.000.000) 2024-05-01 20:26:39 Finished transferring output files
+...
+005 (1454564.000.000) 2024-05-01 20:26:39 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:01:41, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:41, Sys 0 00:00:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4115  -  Run Bytes Sent By Job
+	275  -  Run Bytes Received By Job
+	4115  -  Total Bytes Sent By Job
+	275  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                16        16 
+	   Disk (KB)            :       15     5000     30841 
+	   Memory (MB)          :       18     5000      5120 
+
+	Job terminated of its own accord at 2024-05-02T00:26:39Z with exit-code 1.
+...
+000 (1454565.000.000) 2024-05-01 20:54:54 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+040 (1454565.000.000) 2024-05-01 20:55:20 Started transferring input files
+	Transferring to host: <10.5.138.4:9618?addrs=10.5.138.4-9618&alias=CRUSH-OG-10-5-138-4&noUDP&sock=slot1_3_1583_1dd9_3920>
+...
+040 (1454565.000.000) 2024-05-01 20:55:20 Finished transferring input files
+...
+001 (1454565.000.000) 2024-05-01 20:55:21 Job executing on host: <10.5.138.4:9618?addrs=10.5.138.4-9618&alias=CRUSH-OG-10-5-138-4&noUDP&sock=startd_1550_bfe2>
+...
+022 (1454565.000.000) 2024-05-06 14:13:07 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_3@CRUSH-OG-10-5-138-4 <10.5.138.4:9618?addrs=10.5.138.4-9618&alias=CRUSH-OG-10-5-138-4&noUDP&sock=startd_1550_bfe2>
+...
+024 (1454565.000.000) 2024-05-06 14:13:07 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_3@CRUSH-OG-10-5-138-4, rescheduling job
+...
+009 (1454565.000.000) 2024-05-06 14:13:07 Job was aborted.
+	via condor_rm (by user lroy02)
+...
+000 (1454626.000.000) 2024-05-06 14:26:31 Job submitted from host: <10.5.0.95:9618?addrs=10.5.0.95-9618&alias=its-og-login3.syr.edu&noUDP&sock=schedd_1976_f33b>
+...
+009 (1454626.000.000) 2024-05-06 14:38:57 Job was aborted.
+	via condor_rm (by user lroy02)
+...

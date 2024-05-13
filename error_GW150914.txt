@@ -1,0 +1,58 @@
+2024-05-01T20:24:38.113-04:00 Using seed 0
+2024-05-01T20:24:38.114-04:00 Running with CPU support: 1 threads
+2024-05-01T20:24:38.114-04:00 Reading configuration file
+2024-05-01T20:24:38.140-04:00 Setting up model
+2024-05-01T20:24:38.153-04:00 Setting up priors for each parameter
+2024-05-01T20:24:38.168-04:00 No sampling_params section read from config file
+2024-05-01T20:24:38.168-04:00 Loading waveform transforms
+2024-05-01T20:24:38.178-04:00 Determining analysis times to use
+2024-05-01T20:24:38.179-04:00 Padding H1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-05-01T20:24:38.179-04:00 Padding L1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-05-01T20:24:38.179-04:00 Checking that H1 has valid data in the requested segment
+2024-05-01T20:24:38.221-04:00 Checking that L1 has valid data in the requested segment
+2024-05-01T20:24:38.242-04:00 Reading Frames
+2024-05-01T20:25:11.443-04:00 Highpass Filtering
+2024-05-01T20:25:11.533-04:00 Resampling data
+2024-05-01T20:25:14.857-04:00 Converting to float64
+2024-05-01T20:25:14.859-04:00 Highpass Filtering
+2024-05-01T20:25:14.868-04:00 Remove Padding
+2024-05-01T20:25:14.873-04:00 Reading Frames
+2024-05-01T20:25:44.106-04:00 Highpass Filtering
+2024-05-01T20:25:44.120-04:00 Resampling data
+2024-05-01T20:25:44.181-04:00 Converting to float64
+2024-05-01T20:25:44.182-04:00 Highpass Filtering
+2024-05-01T20:25:44.188-04:00 Remove Padding
+2024-05-01T20:25:44.189-04:00 Will generate a different time series for PSD estimation
+2024-05-01T20:25:44.190-04:00 Checking that H1 has valid data in the requested segment
+2024-05-01T20:25:44.210-04:00 Checking that L1 has valid data in the requested segment
+2024-05-01T20:25:44.222-04:00 Reading Frames
+2024-05-01T20:26:06.248-04:00 Highpass Filtering
+2024-05-01T20:26:06.453-04:00 Resampling data
+2024-05-01T20:26:11.765-04:00 Converting to float64
+2024-05-01T20:26:11.770-04:00 Highpass Filtering
+2024-05-01T20:26:11.860-04:00 Remove Padding
+2024-05-01T20:26:11.862-04:00 Reading Frames
+2024-05-01T20:26:34.041-04:00 Highpass Filtering
+2024-05-01T20:26:34.220-04:00 Resampling data
+2024-05-01T20:26:37.767-04:00 Converting to float64
+2024-05-01T20:26:37.771-04:00 Highpass Filtering
+2024-05-01T20:26:37.862-04:00 Remove Padding
+2024-05-01T20:26:37.862-04:00 Applying gates to PSD data
+2024-05-01T20:26:38.298-04:00 Marginalizing over tc, 5000 points from prior
+2024-05-01T20:26:38.299-04:00 Marginalizing over ra, 5000 points from prior
+2024-05-01T20:26:38.299-04:00 Marginalizing over dec, 5000 points from prior
+2024-05-01T20:26:38.299-04:00 Marginalizing over polarization, 5000 points from prior
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/bin/pycbc_inference", line 129, in <module>
+    model = models.read_from_config(cp)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/__init__.py", line 185, in read_from_config
+    return get_model(name).from_config(cp, **kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/gaussian_noise.py", line 613, in from_config
+    return cls(**args)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/marginalized_gaussian_noise.py", line 213, in __init__
+    variable_params, kwargs = self.setup_marginalization(
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/tools.py", line 136, in setup_marginalization
+    self.marginalized_vector_priors[param] = pop_prior(param)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/models/tools.py", line 108, in pop_prior
+    variable_params.remove(param)
+ValueError: list.remove(x): x not in list
