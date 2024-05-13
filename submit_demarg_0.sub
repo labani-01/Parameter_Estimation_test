@@ -1,0 +1,19 @@
+executable   = /home/lroy02/PE/margtime_tacc_0/demarg_1.sh
+arguments    = "/home/lroy02/PE/margtime_tacc_0/output.hdf /home/lroy02/PE/margtime_tacc_0/demarg_inj.hdf"
+
+error        = error_d.txt
+log          = log_d.txt
+output = out_d.txt
+getenv = True
+
+universe = vanilla
+request_cpus = 1
+request_disk =  5000
+request_memory = 5000
+
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+
+queue
+
+
