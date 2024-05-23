@@ -1,0 +1,10 @@
+pycbc_inference_plot_posterior --verbose\
+    --input-file demarg_without_a.hdf \
+    --output-file A1_GW150914.png \
+    --parameters \
+        'primary_mass(mass1, mass2):mass1' \
+        'secondary_mass(mass1, mass2):mass2' \
+        'mchirp_from_mass1_mass2(mass1, mass2):mchirp' \
+        'primary_mass(mass1, mass2)/secondary_mass(mass1, mass2):q'\
+    --z-arg snr
+/work/shilpa.kastha/src/4ogc_webpage/bin/pycbc_inference_plot_posterior --plot-contours --plot-marginal --plot-scatter --z-arg snr --input-file H1L1V1-EXTRACT_POSTERIOR_GW150914_095045-1126259200-400.hdf --output-file H1L1V1-PLOT_POSTERIOR_GW150914_095045_SPINS-1126259200-400.png --parameters spin1_a spin2_a spin1_azimuthal spin2_azimuthal spin1_polar spin2_polar chi_eff chi_p
