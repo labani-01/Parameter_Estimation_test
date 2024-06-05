@@ -1,0 +1,9 @@
+pycbc_inference_extract_samples --verbose\
+    --input-file GW150914_095045-PYCBC-POSTERIOR-IMRPhenomXPHM.hdf \
+    --output-file test_1.hdf \
+    --parameters \
+        'primary_mass(mass1, mass2):mass1' \
+        'secondary_mass(mass1, mass2):mass2' \
+        'mchirp_from_mass1_mass2(mass1, mass2):mchirp' \
+        'primary_mass(mass1, mass2)/secondary_mass(mass1, mass2):q' \
+    --z-arg snr
