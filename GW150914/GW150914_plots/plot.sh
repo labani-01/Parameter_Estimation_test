@@ -23,6 +23,6 @@ pycbc_inference_plot_posterior --verbose\
     --input-file /home/lroy02/acceleration_project/output_without_a/demarg_zero_a.hdf \
     --output-file A3_zero_a_GW150914_extrinsic.png \
     --parameters \
-        ra dec coa_phase polarization \
+        ra dec \
         inclination distance \
     --z-arg snr
