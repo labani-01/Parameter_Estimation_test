@@ -1,17 +1,18 @@
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_zero_a.hdf \
-    --output-file A1_zero_a_GW150914_masses.png \
+    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_nonzero_large_acc.hdf \
+    --output-file A1_nonzero_large_a_GW150914_masses.png \
     --parameters \
         'primary_mass(mass1, mass2):mass1' \
         'secondary_mass(mass1, mass2):mass2' \
         'mchirp_from_mass1_mass2(mass1, mass2):mchirp' \
         'primary_mass(mass1, mass2)/secondary_mass(mass1, mass2):q' \
+        acc \
     --z-arg snr
 
 
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_zero_a.hdf \
-    --output-file A2_zero_a_GW150914_spins.png \
+    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_nonzero_large_acc.hdf \
+    --output-file A2_nonzero_large_a_GW150914_spins.png \
     --parameters \
         spin1_a spin2_a spin1_azimuthal spin2_azimuthal spin1_polar spin2_polar \
         'chi_eff_from_spherical(mass1, mass2, spin1_a, spin1_polar, spin2_a, spin2_polar):chi_eff' \
@@ -20,8 +21,8 @@ pycbc_inference_plot_posterior --verbose\
 
 
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_zero_a.hdf \
-    --output-file A3_zero_a_GW150914_extrinsic.png \
+    --input-file /home/lroy02/acceleration_project/output_without_a/demarg_nonzero_large_acc.hdf \
+    --output-file A3_nonzero_large_a_GW150914_extrinsic.png \
     --parameters \
         ra dec \
         inclination distance \
