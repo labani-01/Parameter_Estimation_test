@@ -4,7 +4,7 @@ pycbc_inference_plot_posterior --verbose\
     --parameters \
         'mass1_from_mchirp_q(mchirp, q):mass1' \
         'mass2_from_mchirp_q(mchirp, q):mass2' \
-        mchirp q \
+        mchirp q acc\
     --z-arg snr
 
 
