@@ -1,0 +1,134 @@
+000 (16630672.000.000) 2024-12-17 09:55:57 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1645_e961>
+...
+040 (16630672.000.000) 2024-12-17 09:56:13 Started transferring input files
+	Transferring to host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=slot1_1_1016_9d22_22>
+...
+040 (16630672.000.000) 2024-12-17 09:56:13 Finished transferring input files
+...
+001 (16630672.000.000) 2024-12-17 09:56:14 Job executing on host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=startd_976_0886>
+...
+006 (16630672.000.000) 2024-12-17 09:56:23 Image size of job updated: 65660
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (16630672.000.000) 2024-12-17 09:56:23 Started transferring output files
+...
+040 (16630672.000.000) 2024-12-17 09:56:23 Finished transferring output files
+...
+005 (16630672.000.000) 2024-12-17 09:56:23 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:04, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:04, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	886  -  Run Bytes Sent By Job
+	272  -  Run Bytes Received By Job
+	886  -  Total Bytes Sent By Job
+	272  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                16        16 
+	   Disk (KB)            :       12     5000     28119 
+	   Memory (MB)          :        0     5000      5120 
+
+	Job terminated of its own accord at 2024-12-17T14:56:23Z with exit-code 1.
+...
+000 (16630674.000.000) 2024-12-17 10:00:49 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1645_e961>
+...
+040 (16630674.000.000) 2024-12-17 10:01:07 Started transferring input files
+	Transferring to host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=slot1_1_1016_9d22_24>
+...
+040 (16630674.000.000) 2024-12-17 10:01:07 Finished transferring input files
+...
+001 (16630674.000.000) 2024-12-17 10:01:08 Job executing on host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=startd_976_0886>
+...
+006 (16630674.000.000) 2024-12-17 10:01:17 Image size of job updated: 1390972
+	134  -  MemoryUsage of job (MB)
+	136352  -  ResidentSetSize of job (KB)
+...
+006 (16630674.000.000) 2024-12-17 10:02:57 Image size of job updated: 2658560
+	140  -  MemoryUsage of job (MB)
+	143216  -  ResidentSetSize of job (KB)
+...
+040 (16630674.000.000) 2024-12-17 10:02:57 Started transferring output files
+...
+040 (16630674.000.000) 2024-12-17 10:02:57 Finished transferring output files
+...
+005 (16630674.000.000) 2024-12-17 10:02:58 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:01:39, Sys 0 00:00:07  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:39, Sys 0 00:00:07  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	7842  -  Run Bytes Sent By Job
+	272  -  Run Bytes Received By Job
+	7842  -  Total Bytes Sent By Job
+	272  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00       16        16 
+	   Disk (KB)            :    24        5000     28119 
+	   Memory (MB)          :   140        5000      5120 
+
+	Job terminated of its own accord at 2024-12-17T15:02:57Z with exit-code 1.
+...
+000 (16630676.000.000) 2024-12-17 10:16:34 Job submitted from host: <10.5.0.107:9618?addrs=10.5.0.107-9618&alias=sugwg-login.syr.edu&noUDP&sock=schedd_1645_e961>
+...
+040 (16630676.000.000) 2024-12-17 10:16:51 Started transferring input files
+	Transferring to host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=slot1_1_1016_9d22_25>
+...
+040 (16630676.000.000) 2024-12-17 10:16:51 Finished transferring input files
+...
+001 (16630676.000.000) 2024-12-17 10:16:52 Job executing on host: <10.5.210.74:9618?addrs=10.5.210.74-9618&alias=CRUSH-OG-10-5-210-74&noUDP&sock=startd_976_0886>
+...
+006 (16630676.000.000) 2024-12-17 10:17:01 Image size of job updated: 1598972
+	151  -  MemoryUsage of job (MB)
+	153916  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:22:02 Image size of job updated: 2474136
+	625  -  MemoryUsage of job (MB)
+	639240  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:27:02 Image size of job updated: 2474136
+	625  -  MemoryUsage of job (MB)
+	639628  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:32:02 Image size of job updated: 2474136
+	702  -  MemoryUsage of job (MB)
+	717920  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:37:03 Image size of job updated: 2474136
+	702  -  MemoryUsage of job (MB)
+	718052  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:42:04 Image size of job updated: 2474136
+	702  -  MemoryUsage of job (MB)
+	718184  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 10:57:06 Image size of job updated: 2474136
+	702  -  MemoryUsage of job (MB)
+	718312  -  ResidentSetSize of job (KB)
+...
+006 (16630676.000.000) 2024-12-17 11:02:06 Image size of job updated: 2474136
+	702  -  MemoryUsage of job (MB)
+	718332  -  ResidentSetSize of job (KB)
+...
+040 (16630676.000.000) 2024-12-17 12:25:04 Started transferring output files
+...
+040 (16630676.000.000) 2024-12-17 12:25:04 Finished transferring output files
+...
+005 (16630676.000.000) 2024-12-17 12:25:04 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 02:07:35, Sys 0 00:00:33  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 02:07:35, Sys 0 00:00:33  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1241023  -  Run Bytes Sent By Job
+	272  -  Run Bytes Received By Job
+	1241023  -  Total Bytes Sent By Job
+	272  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00       16        16 
+	   Disk (KB)            :  1229        5000     28119 
+	   Memory (MB)          :   702        5000      5120 
+
+	Job terminated of its own accord at 2024-12-17T17:25:04Z with exit-code 0.
+...

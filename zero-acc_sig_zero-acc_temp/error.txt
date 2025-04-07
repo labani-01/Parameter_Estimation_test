@@ -1,0 +1,84 @@
+2024-12-17T23:09:20.481-05:00 Using seed 0
+2024-12-17T23:09:20.481-05:00 Running with CPU support: 1 threads
+2024-12-17T23:09:20.482-05:00 Reading configuration file
+2024-12-17T23:09:20.489-05:00 Setting up model
+2024-12-17T23:09:20.494-05:00 Setting up priors for each parameter
+2024-12-17T23:09:20.496-05:00 No sampling_params section read from config file
+2024-12-17T23:09:20.500-05:00 Determining analysis times to use
+2024-12-17T23:09:20.501-05:00 Padding H1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-12-17T23:09:20.501-05:00 Padding L1 analysis start and end times by 4 (= psd-inverse-length/2) seconds to account for PSD wrap around effects.
+2024-12-17T23:09:20.514-05:00 Generating Fake Strain
+2024-12-17T23:09:20.514-05:00 Making PSD for strain
+2024-12-17T23:09:20.671-05:00 Making colored noise
+2024-12-17T23:09:21.785-05:00 Highpass Filtering
+2024-12-17T23:09:21.797-05:00 Resampling data
+2024-12-17T23:09:21.797-05:00 Applying injections
+2024-12-17T23:09:22.081-05:00 Injecting at 1126259462.42, method is lal
+2024-12-17T23:09:22.114-05:00 Converting to float64
+2024-12-17T23:09:22.114-05:00 Highpass Filtering
+2024-12-17T23:09:22.119-05:00 Remove Padding
+2024-12-17T23:09:22.124-05:00 Generating Fake Strain
+2024-12-17T23:09:22.124-05:00 Making PSD for strain
+2024-12-17T23:09:22.262-05:00 Making colored noise
+2024-12-17T23:09:22.888-05:00 Highpass Filtering
+2024-12-17T23:09:22.894-05:00 Resampling data
+2024-12-17T23:09:22.895-05:00 Applying injections
+2024-12-17T23:09:22.987-05:00 Injecting at 1126259462.42, method is lal
+2024-12-17T23:09:23.011-05:00 Converting to float64
+2024-12-17T23:09:23.011-05:00 Highpass Filtering
+2024-12-17T23:09:23.017-05:00 Remove Padding
+2024-12-17T23:09:23.018-05:00 Will generate a different time series for PSD estimation
+2024-12-17T23:09:23.022-05:00 Generating Fake Strain
+2024-12-17T23:09:23.023-05:00 Making PSD for strain
+2024-12-17T23:09:23.197-05:00 Making colored noise
+2024-12-17T23:09:24.182-05:00 Highpass Filtering
+2024-12-17T23:09:24.272-05:00 Resampling data
+2024-12-17T23:09:24.274-05:00 Applying injections
+2024-12-17T23:09:24.368-05:00 Injecting at 1126259462.42, method is lal
+2024-12-17T23:09:24.393-05:00 Converting to float64
+2024-12-17T23:09:24.395-05:00 Highpass Filtering
+2024-12-17T23:09:24.485-05:00 Remove Padding
+2024-12-17T23:09:24.489-05:00 Generating Fake Strain
+2024-12-17T23:09:24.489-05:00 Making PSD for strain
+2024-12-17T23:09:24.632-05:00 Making colored noise
+2024-12-17T23:09:25.534-05:00 Highpass Filtering
+2024-12-17T23:09:25.637-05:00 Resampling data
+2024-12-17T23:09:25.639-05:00 Applying injections
+2024-12-17T23:09:25.756-05:00 Injecting at 1126259462.42, method is lal
+2024-12-17T23:09:25.782-05:00 Converting to float64
+2024-12-17T23:09:25.784-05:00 Highpass Filtering
+2024-12-17T23:09:25.871-05:00 Remove Padding
+2024-12-17T23:09:25.871-05:00 Applying gates to PSD data
+2024-12-17T23:09:26.156-05:00 Marginalizing over tc, 5000 points from prior
+2024-12-17T23:09:26.156-05:00 Marginalizing over ra, 5000 points from prior
+2024-12-17T23:09:26.156-05:00 Marginalizing over dec, 5000 points from prior
+2024-12-17T23:09:26.157-05:00 Marginalizing over polarization, 5000 points from prior
+2024-12-17T23:09:26.157-05:00 Marginalizing over distance
+2024-12-17T23:09:26.158-05:00 Prior is directly on distance, setting up 1000 grid weights
+2024-12-17T23:09:26.191-05:00 Interpolator valid for SNRs in (5.0, 50.0)
+2024-12-17T23:09:26.192-05:00 Interpolator using grid (100, 100)
+2024-12-17T23:09:26.193-05:00 Setup up likelihood interpolator
+  0%|          | 0/100 [00:00<?, ?it/s]  3%|▎         | 3/100 [00:00<00:03, 27.58it/s]  6%|▌         | 6/100 [00:00<00:03, 27.66it/s]  9%|▉         | 9/100 [00:00<00:03, 27.63it/s] 12%|█▏        | 12/100 [00:00<00:03, 27.70it/s] 15%|█▌        | 15/100 [00:00<00:03, 27.81it/s] 18%|█▊        | 18/100 [00:00<00:02, 27.92it/s] 21%|██        | 21/100 [00:00<00:02, 27.92it/s] 24%|██▍       | 24/100 [00:00<00:02, 28.07it/s] 27%|██▋       | 27/100 [00:00<00:02, 28.27it/s] 30%|███       | 30/100 [00:01<00:02, 28.44it/s] 33%|███▎      | 33/100 [00:01<00:02, 28.58it/s] 36%|███▌      | 36/100 [00:01<00:02, 28.68it/s] 39%|███▉      | 39/100 [00:01<00:02, 28.68it/s] 42%|████▏     | 42/100 [00:01<00:02, 27.36it/s] 45%|████▌     | 45/100 [00:01<00:02, 26.19it/s] 48%|████▊     | 48/100 [00:01<00:02, 25.25it/s] 51%|█████     | 51/100 [00:01<00:01, 26.16it/s] 54%|█████▍    | 54/100 [00:01<00:01, 26.86it/s] 57%|█████▋    | 57/100 [00:02<00:01, 27.32it/s] 60%|██████    | 60/100 [00:02<00:01, 27.72it/s] 63%|██████▎   | 63/100 [00:02<00:01, 27.93it/s] 66%|██████▌   | 66/100 [00:02<00:01, 28.12it/s] 69%|██████▉   | 69/100 [00:02<00:01, 28.15it/s] 72%|███████▏  | 72/100 [00:02<00:01, 26.95it/s] 75%|███████▌  | 75/100 [00:02<00:00, 27.04it/s] 78%|███████▊  | 78/100 [00:02<00:00, 27.40it/s] 81%|████████  | 81/100 [00:02<00:00, 27.51it/s] 84%|████████▍ | 84/100 [00:03<00:00, 27.77it/s] 87%|████████▋ | 87/100 [00:03<00:00, 27.88it/s] 90%|█████████ | 90/100 [00:03<00:00, 28.00it/s] 93%|█████████▎| 93/100 [00:03<00:00, 28.05it/s] 96%|█████████▌| 96/100 [00:03<00:00, 26.96it/s] 99%|█████████▉| 99/100 [00:03<00:00, 27.46it/s]100%|██████████| 100/100 [00:03<00:00, 27.57it/s]
+2024-12-17T23:09:29.834-05:00 Setting up sampler
+2024-12-17T23:09:29.954-05:00 pregenerating sky pointings
+2024-12-17T23:09:29.954-05:00 drawing samples: 1000000
+2024-12-17T23:09:30.027-05:00 sorting into time delay dict
+0it [00:00, ?it/s]120652it [00:00, 1206463.62it/s]257526it [00:00, 1301888.17it/s]395249it [00:00, 1336260.07it/s]533938it [00:00, 1356209.86it/s]669559it [00:00, 1288958.99it/s]807281it [00:00, 1317947.91it/s]946615it [00:00, 1342019.42it/s]1000000it [00:00, 1327108.55it/s]
+2024-12-17T23:09:46.809-05:00 pregenerating sky pointings
+2024-12-17T23:09:46.809-05:00 drawing samples: 1000000
+2024-12-17T23:09:46.883-05:00 sorting into time delay dict
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/lroy02/miniconda3/envs/gravity/bin/pycbc_inference", line 137, in <module>
+    sampler = inference.sampler.load_from_config(
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/__init__.py", line 95, in load_from_config
+    return samplers[name].from_config(cp, model, **kwargs)
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/dynesty.py", line 341, in from_config
+    obj = cls(model, nlive=nlive, nprocesses=nprocesses,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/pycbc/inference/sampler/dynesty.py", line 151, in __init__
+    self._sampler = dynesty.NestedSampler(log_likelihood_call,
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynesty.py", line 677, in __new__
+    live_points, logvol_init, init_ncalls = _initialize_live_points(
+  File "/home/lroy02/miniconda3/envs/gravity/lib/python3.9/site-packages/dynesty/dynamicsampler.py", line 451, in _initialize_live_points
+    raise ValueError("The log-likelihood of live "
+ValueError: The log-likelihood of live point is invalid.
