@@ -1,6 +1,6 @@
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/acceleration_project/GW190521/demarg_nonzero_acc_new_env.hdf \
-    --output-file test_GW190521_masses.png \
+    --input-file /home/lroy02/ground_based_acc/project/test_settings/inference_GW190521_gauss.hdf \
+    --output-file inference_GW190521_gauss.png \
     --parameters \
         'mass1_from_mchirp_q(mchirp, q):mass1' \
         'mass2_from_mchirp_q(mchirp, q):mass2' \
