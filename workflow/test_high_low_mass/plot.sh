@@ -1,6 +1,6 @@
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/ground_based_acc/project/workflow/test/workflow_outputs1/H1L1V1-DEMARGINALIZATION_DEMARG_INFERENCE-GW190521_030229-0-10.hdf \
-    --output-file H1L1V1-DEMARGINALIZATION_DEMARG_INFERENCE-GW190521_030229-0-10.png \
+    --input-file /home/lroy02/ground_based_acc/project/test_settings/inference_GW190521_gauss_emcee.hdf \
+    --output-file inference_GW190521_gauss_emcee.png \
     --parameters \
         'mass1_from_mchirp_q(mchirp, q):mass1' \
         'mass2_from_mchirp_q(mchirp, q):mass2' \
