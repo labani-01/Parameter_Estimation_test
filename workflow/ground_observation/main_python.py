@@ -1,4 +1,4 @@
-	#!/bin/bash
+#!/bin/bash
 
 import h5py
 import re
@@ -37,11 +37,11 @@ infhand = wf.resolve_url_to_file(opts.inference_config)
 inference_exe = wf.Executable(workflow.cp, "inference", ifos=workflow.ifos,
                               out_dir=opts.output_dir)
 
-demarg_exe = wf.Executable(workflow.cp, "demarginalization", ifos=workflow.ifos,
+demarg_exe = wf.Executable(workflow.cp, "demarg", ifos=workflow.ifos,
                               out_dir=opts.output_dir)
 
-#plot_exe = wf.Executable(workflow.cp, "plot", ifos=workflow.ifos,
-#                              out_dir=opts.output_dir)
+plot_exe = wf.Executable(workflow.cp, "plot", ifos=workflow.ifos,
+                              out_dir=opts.output_dir)
 
 config = configparser.ConfigParser()
 
@@ -70,20 +70,22 @@ for i, (priors, post_files, data_files) in enumerate(zip(opts.prior_catalog, opt
     #if base == "IMRPhenomD_NRTidal":
         #lambda1 = float(post['samples']['lambda1'][index])
         #lambda2 = float(post['samples']['lambda2'][index])
-    min_mchirp = int(np.min(post['samples']['srcmchirp'][:] * (1+post['samples']['redshift'][:])))
-    max_mchirp = int(np.max(post['samples']['srcmchirp'][:] * (1+post['samples']['redshift'][:])))
-    min_q = int(np.min(post['samples']['q']))
-    max_q = int(np.max(post['samples']['q']))
-    min_m1 = pycbc.conversions.mass1_from_mchirp_q(int(float(min_mchirp)), min_q)
-    min_m2 = pycbc.conversions.mass2_from_mchirp_q(int(float(min_mchirp)), min_q)
+    mchirp = post['samples']['srcmchirp'][:]*(1+post['samples']['redshift'][:])
+    q = post['samples']['q'][:]
+    min_mchirp = int(np.min(mchirp))
+    max_mchirp = int(np.max(mchirp))
+    min_q = int(np.min(q))
+    max_q = int(np.max(q))
+    m1 = pycbc.conversions.mass1_from_mchirp_q(mchirp, q)
+    m2 = pycbc.conversions.mass2_from_mchirp_q(mchirp, q)
     max_dis = int(np.max(post['samples']['distance'][:]))
     min_dis = int(np.min(post['samples']['distance'][:]))
-    hp, _ = get_td_waveform(approximant="constlosAcc", mass1=min_m1, mass2=min_m2, f_lower=20, delta_t=1.0/2048, v0=0, acc=0, base_model=base, n=0.1)
+    hp_base, hc_base  = get_td_waveform(approximant="constlosAcc", mass1=int(np.min(m1) - 1), mass2=int(np.min(m2) -1), f_lower=20, delta_t=1.0/4096, v0=0, acc=0, base_model='IMRPhenomXPHM', n=0.1)
     #t = int(hp.duration) 
     detect = config.get(data_section, "instruments")
     #channel = config.get(data_section, "channel-name")
-    start = int(hp.start_time)
-    end = int(hp.end_time)
+    start = int(hp_base.start_time)
+    end = int(hp_base.end_time)
     path = os.path.join(opts.output_dir, f'prior_{pathlib.Path(priors).stem}.ini')
     with open(path, 'w') as f:
         f.write(f"""
@@ -110,13 +112,12 @@ max-distance = {max_dis}
 [prior-tc]
 #; coalescence time prior
 name = uniform
-min-tc = {tc_value - 0.1}
-max-tc = {tc_value + 0.1}
+min-tc = {tc_value - 0.2}
+max-tc = {tc_value + 0.2}
 
 [data]
-instruments = {detect}
 trigger-time = {tc_value}
-analysis-start-time = {start - 20}
+analysis-start-time = {start - 30}
 analysis-end-time = {end + 10}
 """)
         #file_paths = []
@@ -139,6 +140,8 @@ analysis-end-time = {end + 10}
             #for file, detector in zip(files, detectors):
                 #file_path = os.path.join(root, file)
                 #f.write(f"{detector}:{file_path} ")
+        detect_names = " ".join([det for det, path in file_paths.items() if path])
+        f.write(f"instruments = {detect_names}\n")
         channel_str = " ".join([f"{det}:GWOSC-4KHZ_{strain_versions[det]}_STRAIN" for det in detectors if file_paths[det]])
         f.write(f"channel-name = {channel_str}\n")
 
@@ -149,22 +152,15 @@ analysis-end-time = {end + 10}
     fhand = wf.resolve_url_to_file(path)
     node = inference_exe.create_node()
     node.add_input_list_opt("--config-file", [infhand, fhand])
-    inference_file = node.new_output_file_opt(workflow.analysis_time, '.hdf', '--output-file', tags=[os.path.splitext(os.path.basename(priors))[0]])
+    inference_file = node.new_output_file_opt(workflow.analysis_time, '.hdf', '--output-file', tags=[os.path.splitext(os.path.basename(priors))[0].replace("inference-", "")])
     workflow += node
     node = demarg_exe.create_node()
     node.add_input_opt("--input-file", inference_file)
-    demarg_file = node.new_output_file_opt(workflow.analysis_time, '.hdf', '--output-file', tags=["demarg_" + os.path.splitext(os.path.basename(priors))[0]])
+    demarg_file = node.new_output_file_opt(workflow.analysis_time, '.hdf', '--output-file', tags=[os.path.splitext(os.path.basename(priors))[0].replace("inference-", "d")])
     workflow += node
-#    node = plot_exe.create_node()
-#    node.add_input_opt("--input-file", demarg_file)
-#    plot_file = node.new_output_file_opt(workflow.analysis_time, '.png', '--output-file', tags=[os.path.splitext(os.path.basename(priors))[0]])
-#    workflow += node
-    #       node = plot_exe.create_node()
-#       node.add_input_opt("--input-file", inference_file)
-#       plot_file = node.new_output_file_opt(workflow.analysis_time, ".png",
-#                                             "--output-file",
-#                                            tags=[str(inj)])
-#       workflow += node
-    
+    node = plot_exe.create_node()
+    node.add_input_opt("--input-file", demarg_file)
+    plot_file = node.new_output_file_opt(workflow.analysis_time, '.png', '--output-file', tags=[os.path.splitext(os.path.basename(priors))[0].replace("inference-", "p")])
+    workflow += node
 workflow.save()
 
