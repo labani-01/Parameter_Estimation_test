@@ -1,17 +1,17 @@
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_GW200105_test.hdf \
-    --output-file separate_GW200105_masses_test.png \
+    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_nonzero_a_GW200105_new1.hdf \
+    --output-file separate_nonzero_a_GW200105_masses_8k.png \
     --parameters \
         'mass1_from_mchirp_q(mchirp, q):mass1' \
         'mass2_from_mchirp_q(mchirp, q):mass2' \
         mchirp q \
-        lambda2 \
+        lambda2 acc \
     --z-arg snr
 
 
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_GW200105_test.hdf \
-    --output-file separate_GW200105_spins_test.png \
+    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_nonzero_a_GW200105_new1.hdf \
+    --output-file separate_nonzero_a_GW200105_spins_8k.png \
     --parameters \
         spin1_a spin2_a spin1_azimuthal spin2_azimuthal spin1_polar spin2_polar \
         'chi_eff_from_spherical(mass1_from_mchirp_q(mchirp, q), mass2_from_mchirp_q(mchirp, q), spin1_a, spin1_polar, spin2_a, spin2_polar):chi_eff' \
@@ -20,8 +20,8 @@ pycbc_inference_plot_posterior --verbose\
 
 
 pycbc_inference_plot_posterior --verbose\
-    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_GW200105_test.hdf \
-    --output-file separate_GW200105_extrinsic_test.png \
+    --input-file /home/lroy02/ground_based_acc/separate_runs/GW200105/demarg_nonzero_a_GW200105_new1.hdf \
+    --output-file separate_nonzero_a_GW200105_extrinsic_8k.png \
     --parameters \
         ra dec \
         inclination distance polarization coa_phase \
